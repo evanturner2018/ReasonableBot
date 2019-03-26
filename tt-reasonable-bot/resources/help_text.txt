@@ -1,0 +1,17 @@
+Two word Commands:
+!accounts or !passwords (plural)
+  - List all accounts that have a password
+!password <account_name>
+  - List password of given <account_name>
+!sigma <number>
+  - List name of sigma <number> (rip Patel)
+
+One Word Commands:
+!username (pretty much every username)
+!standards (standards form)
+!actives (lists all actives)
+!calendar (what's going on this week)
+!cleanup (cleanup list)
+!pledges (who is pledging)
+!door (door code)
+!bar (bar shift schedule)
