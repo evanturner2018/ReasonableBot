@@ -24,6 +24,7 @@ var nukeRegex = /^!nuke$/;
 var moonRegex = /^!moon$/;
 var barRegex = /^!bar$/;
 var budgetRegex = /^!budget$/;
+var gazeRegex = /^!gaze$/;
 
 
 // Personal variables
@@ -164,6 +165,10 @@ function getBudget(){
     return '$0.69';
 };
 
+function getGaze(){
+    return '@Vamsi Chintalapati';
+};
+
 // Determine what kind of response to make
 function respond() {
   // Now we do the cool stuff!!
@@ -301,6 +306,13 @@ function respond() {
         this.res.writeHead(200);
         postMessage(getBudget);
         this.res.end();
+    }
+
+    else if (gazeRegex.test(request.text)) {
+      console.log("!gaze");
+      this.res.writeHead(200);
+      postMessage(getGaze);
+      this.res.end();
     }
 
       // GET NUKE (to be used to spam group chat if it all goes hell)
