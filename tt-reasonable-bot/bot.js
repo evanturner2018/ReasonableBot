@@ -26,7 +26,7 @@ var barRegex = /^!bar$/;
 var budgetRegex = /^!budget$/;
 var gazeRegex = /^!gaze$/;
 var ianRegex = /^!btc$/;
-
+var lowestBadgeRegex = /^!lowestBadge$/;
 
 // Personal variables
 var passwords = {};
@@ -122,6 +122,10 @@ function getStandardsForm() {
 
 function getBTC() {
     return '@Ian Quinn';
+}
+
+function getLowestBadge() {
+    return 'Evan Turner';
 }
 
 function getThanks() {
@@ -329,7 +333,15 @@ function respond() {
       this.res.end();
     }
 
-      // GET NUKE (to be used to spam group chat if it all goes hell)
+    //Lowest Badge
+    else if (lowestBadgeRegex.test(request.text)) {
+       console.log("!lowestBadge");
+       this.res.writeHead(200);
+       postMessage(getlowestBadge);
+       this.res.end();
+    }
+     
+	// GET NUKE (to be used to spam group chat if it all goes hell)
     else if (nukeRegex.test(request.txt)){
 	console.log("!nuke");
 	//this.res.writeHead(200); // uncomment this to purge
@@ -391,5 +403,7 @@ function postMessage(messageFunction, optString) {
   });
   botReq.end(JSON.stringify(body));
 };
+
+
 
 exports.respond = respond;
