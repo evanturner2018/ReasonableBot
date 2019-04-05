@@ -122,7 +122,7 @@ function getStandardsForm() {
 
 function getBTC() {
     return '@Ian Quinn';
-}
+};
 
 function getLowestBadge() {
     return 'Evan Turner';
