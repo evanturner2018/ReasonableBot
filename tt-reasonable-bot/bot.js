@@ -25,6 +25,7 @@ var moonRegex = /^!moon$/;
 var barRegex = /^!bar$/;
 var budgetRegex = /^!budget$/;
 var gazeRegex = /^!gaze$/;
+var ianRegex = /^!btc$/;
 
 
 // Personal variables
@@ -118,6 +119,10 @@ function getDoor() {
 function getStandardsForm() {
     return 'https://docs.google.com/forms/d/1Nr7-pbG5DrM_DFKNCN0bMHQLuvI56s_nohUFxFzDQSQ/viewform?edit_requested=true';
 };
+
+function getBTC() {
+    return '@Ian Quinn';
+}
 
 function getThanks() {
 	var x = Math.floor(Math.random() % 4);
@@ -308,10 +313,19 @@ function respond() {
         this.res.end();
     }
 
+    //no gay shit
     else if (gazeRegex.test(request.text)) {
       console.log("!gaze");
       this.res.writeHead(200);
       postMessage(getGaze);
+      this.res.end();
+    }
+
+    //beat the clock
+    else if (ianRegex.test(request.text)) {
+      console.log("!btc");
+      this.res.writeHead(200);
+      postMessage(getBTC);
       this.res.end();
     }
 
