@@ -126,7 +126,7 @@ function getBTC() {
 
 function getLowestBadge() {
     return 'Evan Turner';
-}
+};
 
 function getThanks() {
 	var x = Math.floor(Math.random() % 4);
