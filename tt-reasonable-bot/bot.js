@@ -22,6 +22,7 @@ var standardsRegex = /^!standards$/;
 var thanksRegex = /^!thanks$/;
 var nukeRegex = /^!nuke$/;
 var moonRegex = /^!moon$/;
+var riskRegex = /^!risk$/;
 var barRegex = /^!bar$/;
 var budgetRegex = /^!budget$/;
 var gazeRegex = /^!gaze$/;
@@ -170,6 +171,10 @@ function getMoon(){
     return 'Do your fucking job @Andrew Campbell';
 };
 
+function getRisk(){
+    return '!moon';
+};
+
 function getBudget(){
     return '$0.69';
 };
@@ -306,6 +311,14 @@ function respond() {
         console.log("!moon");
         this.res.writeHead(200);
         postMessage(getMoon);
+        this.res.end();
+    }
+
+    // GET risk
+    else if (riskRegex.test(request.text)) {
+        console.log("!risk");
+        this.res.writeHead(200);
+        postMessage(getRisk);
         this.res.end();
     }
 

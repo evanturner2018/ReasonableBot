@@ -15,5 +15,3 @@ One Word Commands:
 !pledges (who is pledging)
 !door (door code)
 !bar (bar shift schedule)
-
-test
