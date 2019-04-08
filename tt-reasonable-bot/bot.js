@@ -163,8 +163,8 @@ function getNukeCountdown(){
 };
 
 function getDrop(){
-   // return 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'; // rick roll
-	 return '!nuke';
+   return 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'; // rick roll
+	 //return '!nuke';
 };
 
 function getMoon(){
