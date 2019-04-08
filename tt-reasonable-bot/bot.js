@@ -163,8 +163,8 @@ function getNukeCountdown(){
 };
 
 function getDrop(){
-    return 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'; // rick roll
-	 //return '!nuke';
+   // return 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'; // rick roll
+	 return '!nuke';
 };
 
 function getMoon(){
@@ -353,18 +353,25 @@ function respond() {
        postMessage(getlowestBadge);
        this.res.end();
     }
-     
-	// GET NUKE (to be used to spam group chat if it all goes hell)
-    else if (nukeRegex.test(request.txt)){
-	console.log("!nuke");
-	//this.res.writeHead(200); // uncomment this to purge
-	//postMessage(getNuke);
-	//this.res.writeHead(200);
-	//postMessage(getNukeCountdown);
-	this.res.writeHead(200);
-        postMessage(getDrop);
-	this.res.end();
+
+    else if (nukeRegex.test(request.text)) {
+       console.log("!nuke");
+       this.res.writeHead(200);
+       postMessage(getDrop);
+       this.res.end();
     }
+
+	// GET NUKE (to be used to spam group chat if it all goes hell)
+   // else if (nukeRegex.test(request.txt)){
+   //   	console.log("!nuke");
+      	//this.res.writeHead(200); // uncomment this to purge
+      	//postMessage(getNuke);
+      	//this.res.writeHead(200);
+      	//postMessage(getNukeCountdown);
+    //  	this.res.writeHead(200);
+     //   postMessage(getDrop);
+      //	this.res.end();
+    //}
       
     // NOT IMPORTANT...
     else {
