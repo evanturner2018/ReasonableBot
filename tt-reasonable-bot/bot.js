@@ -163,7 +163,8 @@ function getNukeCountdown(){
 };
 
 function getDrop(){
-   return 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'; // rick roll
+   return 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'; // lol
+   //return 'meatspin.com'
 	 //return '!nuke';
 };
 
@@ -346,7 +347,7 @@ function respond() {
       this.res.end();
     }
 
-    //Lowest Badge
+    //!nuke that actually works (5 times is the record)
     else if (lowestBadgeRegex.test(request.text)) {
        console.log("!lowestBadge");
        this.res.writeHead(200);
