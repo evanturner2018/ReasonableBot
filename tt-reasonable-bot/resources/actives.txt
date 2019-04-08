@@ -36,15 +36,3 @@
 1017 - Alec Robertson
 1018 - Andrew Witkowski
 1019 - Evan Turner
-1020 - Max Clowdus
-1021 - Tejas Vankatachalam
-1022 - Francesco Brossart
-1023 - Anthony Herron
-1024 - Joey Fekete
-1025 - Erik Gustafson
-1026 - Jon Dailey
-1027 - Jacob Rosenberg
-1028 - Jake Walsh
-1029 - Brendan Eagan
-1030 - Spencer Hermann
-
