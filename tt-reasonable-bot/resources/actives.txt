@@ -1,6 +1,4 @@
-973 - Jamie Connolly
 974 - Scott Ewonus
-979 - Rob Olander
 980 - Corey Denham
 982 - Thomas Ratstatter
 983 - Nick Breetz
@@ -15,7 +13,6 @@
 996 - Anton Krondorfer
 997 - Jason Cline
 998 - Spencer Malynn
-999 - Eric Leyda
 1000 - Noah Tubbs
 1001 - Andy Wenger
 1002 - Justin Western
@@ -36,14 +33,14 @@
 1017 - Alec Robertson
 1018 - Andrew Witkowski
 1019 - Evan Turner
-1020 - Max
-1021 - Tejas
-1022 - Franco
-1023 - Anthony
-1024 - Joey
-1025 - Erik
-1026 - Jon
-1027 - Jacob
-1028 - Jake
-1029 - Brendan
-1030 - Spencer
+1020 - Max Clowdus
+1021 - Tejas Venkatchalam
+1022 - Franco Brossart
+1023 - Anthony Herron
+1024 - Joey Fekete
+1025 - Erik Gustafson
+1026 - Jon Dailey
+1027 - Jacob Rosenberg
+1028 - Jake Walsh
+1029 - Brendan Eagan
+1030 - Spencer Herman
