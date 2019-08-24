@@ -92,7 +92,7 @@ function getHelpText() {
 function getCalendarText() {
     return readFileToString('./resources/calendar.txt');
 };
-
+;
 function getStudyImage() {
     return 'http://i.imgur.com/NL43LG2.jpg';
 };
@@ -100,7 +100,6 @@ function getStudyImage() {
 function getUsername(){
     return 'sigmachapterofthetatau@gmail.com';
 };
-
 function getBar(){
     return 'https://imgur.com/a/H5sU2Z2';
 };
@@ -110,7 +109,7 @@ function getReasonable(){
 };
 
 function getCleanup(){
-    return "https://i.imgur.com/Oc7y2FW.png";
+    return "./resources/cleanup.jpeg";
 };
 
 function getDoor() {
