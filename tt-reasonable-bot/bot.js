@@ -109,7 +109,7 @@ function getReasonable(){
 };
 
 function getCleanup(){
-    return 'https://imgur.com/a/1C0IQIX';
+    return 'http://i.imgur.com/P8MFdUF.jpg';
 };
 
 function getDoor() {
