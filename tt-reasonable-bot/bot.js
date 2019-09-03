@@ -117,7 +117,7 @@ function getDoor() {
 };
 
 function getStandardsForm() {
-    return 'https://docs.google.com/forms/d/1Nr7-pbG5DrM_DFKNCN0bMHQLuvI56s_nohUFxFzDQSQ/viewform?edit_requested=true';
+    return 'https://docs.google.com/forms/d/1XaPgW8POfCV81O5zwRYjSz1tcDL3FxTwcRvMmfuRPdg/viewform?edit_requested=true';
 };
 
 function getBTC() {
