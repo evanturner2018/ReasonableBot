@@ -14,5 +14,10 @@ One Word Commands:
 !cleanup (cleanup list)
 !pledges (who is pledging)
 !door (door code)
+<<<<<<< HEAD
 !bar (bar shift schedule)!drive (google drive link)
 !drive (google drive link)
+=======
+!bar (bar shift schedule)
+!drive (google drive link)
+>>>>>>> 5256bd255b117276c5a9ef87bac8a03af08882e2

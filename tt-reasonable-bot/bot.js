@@ -67,9 +67,6 @@ function importActives() {
 };
 
 /* Callback fuctions */
-function getDrive() {
-  return 'https://drive.google.com/drive/u/0/folders/1cbuZ2D3X1T82Aue1VxbhBfrRQ5viB7ax';
-};
 
 function getActives() {
     return readFileToString('./resources/actives.txt');
@@ -115,6 +112,10 @@ function getReasonable(){
 
 function getCleanup(){
     return 'http://i.imgur.com/P8MFdUF.jpg';
+};
+
+function getDrive() {
+  return 'https://drive.google.com/drive/u/0/folders/1cbuZ2D3X1T82Aue1VxbhBfrRQ5viB7ax';
 };
 
 function getDoor() {
@@ -202,13 +203,8 @@ function respond() {
       postMessage(getHelpText);
       this.res.end();
     }
-    //post link to the google drive
-    else if (driveRegex.test(request.txt)) {
-      console.log("!drive");
-      this.res.writeHead(200);
-      postMessage(getDrive);
-      this.res.end();
-    }
+    
+
     // GET ACCOUNTS
     else if (accountsRegex.test(request.text) || passEmptyRegex.test(request.text)) {
       console.log("!accounts");
@@ -299,6 +295,14 @@ function respond() {
         this.res.writeHead(200);
         postMessage(getDoor);
         this.res.end();
+    }
+    
+    //post link to the google drive
+    else if (driveRegex.test(request.txt)) {
+      console.log("!drive");
+      this.res.writeHead(200);
+      postMessage(getDrive);
+      this.res.end();
     }
 
       // GET STANDARDS FORM
