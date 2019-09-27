@@ -69,7 +69,7 @@ function importActives() {
 /* Callback fuctions */
 function getDrive() {
   return 'https://drive.google.com/drive/u/0/folders/1cbuZ2D3X1T82Aue1VxbhBfrRQ5viB7ax';
-}
+};
 
 function getActives() {
     return readFileToString('./resources/actives.txt');
@@ -202,8 +202,8 @@ function respond() {
       postMessage(getHelpText);
       this.res.end();
     }
-
-    if(driveRegex.test(request.txt)) {
+    //post link to the google drive
+    else if (driveRegex.test(request.txt)) {
       console.log("!drive");
       this.res.writeHead(200);
       postMessage(getDrive);
