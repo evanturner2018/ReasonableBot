@@ -26,8 +26,8 @@ var riskRegex = /^!risk$/;
 var barRegex = /^!bar$/;
 var budgetRegex = /^!budget$/;
 var gazeRegex = /^!gaze$/;
+var fixRegex = /^!fix$/;
 var ianRegex = /^!btc$/;
-var lowestBadgeRegex = /^!lowestBadge$/;
 var driveRegex = /^!drive$/;
 
 // Personal variables
@@ -105,6 +105,10 @@ function getUsername(){
 function getBar(){
     return 'https://i.imgur.com/eAFjrOC.jpg';
 };
+
+function getFixForm(){
+    return 'https://docs.google.com/forms/d/1PbzY8sRQXdT_Mt45pgj48c19NKyAFoHjgUl3Gr4MVgA/viewform?edit_requested=true';
+}
 
 function getReasonable(){
     return readFileToString('./resources/reasonable_list.txt');
@@ -313,6 +317,14 @@ function respond() {
         this.res.end();
     }
 
+      // GET FIX FORM
+    else if (fixRegex.test(request.text)) {
+	console.log("!fix");
+	this.res.writeHead(200);
+	postMessage(getFixForm);
+	this.res.end();
+    }
+
       // GET THANKS
     else if (thanksRegex.test(request.text)) {
         console.log("!thanks");
@@ -359,14 +371,6 @@ function respond() {
       this.res.writeHead(200);
       postMessage(getBTC);
       this.res.end();
-    }
-
-    //Lowest Badge
-    else if (lowestBadgeRegex.test(request.text)) {
-       console.log("!lowestBadge");
-       this.res.writeHead(200);
-       postMessage(getlowestBadge);
-       this.res.end();
     }
      
 	// GET NUKE (to be used to spam group chat if it all goes hell)
