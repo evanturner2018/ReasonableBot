@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "director": "",
-    "mathjs": "2.7.0"
+    "mathjs": "6.2.3"
   },
   "engines": {
     "node": "0.10.x"
