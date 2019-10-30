@@ -127,7 +127,8 @@ function getDoor() {
 };
 
 function getStandardsForm() {
-    return 'https://docs.google.com/forms/d/1XaPgW8POfCV81O5zwRYjSz1tcDL3FxTwcRvMmfuRPdg/viewform?edit_requested=true';
+    /*return 'https://docs.google.com/forms/d/1XaPgW8POfCV81O5zwRYjSz1tcDL3FxTwcRvMmfuRPdg/viewform?edit_requested=true';*/
+	return 'https://i/imgur.com/ZK3MZgK.jpg';
 };
 
 function getBTC() {
