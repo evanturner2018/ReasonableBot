@@ -1,18 +1,13 @@
 974 - Scott Ewonus
 980 - Corey Denham
-982 - Thomas Ratstatter
-983 - Nick Breetz
 984 - Jake Krebs
 986 - Alex Schell
 987 - Sam Strom
 989 - Zach Remm
 992 - Connor Murphy
-993 - Matt Stoner
 994 - Abram Haghnazari
-995 - Vamsi Chintalapati
 996 - Anton Krondorfer
 997 - Jason Cline
-998 - Spencer Malynn
 1000 - Noah Tubbs
 1001 - Andy Wenger
 1002 - Justin Western
@@ -46,5 +41,5 @@
 1032 - Gabe
 1033 - Sohit
 1034 - Max
-1035 - Henry
-1036 - Thot
+1035 - Henry Niermann
+
