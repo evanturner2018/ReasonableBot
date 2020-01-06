@@ -115,7 +115,7 @@ function getReasonable(){
 };
 
 function getCleanup(){
-    return 'https://imgur.com/a/4giJA1l.jpg';
+    return 'https://i.imgur.com/8iXZKx9.jpg';
 };
 
 function getDrive() {
