@@ -25,7 +25,7 @@ var moonRegex = /^!moon$/;
 var riskRegex = /^!risk$/;
 var barRegex = /^!bar$/;
 var budgetRegex = /^!budget$/;
-var gazeRegex = /^!gaze$/;
+var gazeRegex = /^!fatChick$/;
 var fixRegex = /^!fix$/;
 var ianRegex = /^!btc$/;
 var driveRegex = /^!drive$/;
@@ -189,7 +189,7 @@ function getBudget(){
 };
 
 function getGaze(){
-    return '@Vamsi Chintalapati';
+    return '@Max Harris Go fuck a fat chick';
 };
 
 // Determine what kind of response to make
@@ -359,7 +359,7 @@ function respond() {
 
     //no gay shit
     else if (gazeRegex.test(request.text)) {
-      console.log("!gaze");
+      console.log("!fatChick");
       this.res.writeHead(200);
       postMessage(getGaze);
       this.res.end();
