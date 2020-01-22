@@ -2,7 +2,6 @@
 980 - Corey Denham
 986 - Alex Schell
 987 - Sam Strom
-992 - Connor Murphy
 994 - Abram Haghnazari
 996 - Anton Krondorfer
 997 - Jason Cline
@@ -32,11 +31,9 @@
 1026 - Jon Dailey
 1027 - Rosenberg
 1028 - Walsh
-1029 - Brendan
 1030 - Spencer
-1031 - Ryan
-1032 - Gabe
-1033 - Sohit
-1034 - Max
+1031 - Ryan Socha
+1032 - Gabriel Manes
+1034 - Malcom
 1035 - Henry Niermann
 
