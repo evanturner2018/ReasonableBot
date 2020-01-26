@@ -103,7 +103,7 @@ function getUsername(){
     return 'sigmachapterofthetatau@gmail.com';
 };
 function getBar(){
-    return 'https://i.imgur.com/YtvJ93B.jpg';
+    return 'https://i.imgur.com/iHIh3SM.jpg';
 };
 
 function getFixForm(){
