@@ -1,5 +1,6 @@
 974 - Scott Ewonus
 980 - Corey Denham
+984 - Krebs
 986 - Alex Schell
 987 - Sam Strom
 994 - Abram Haghnazari
@@ -34,6 +35,6 @@
 1030 - Spencer
 1031 - Ryan Socha
 1032 - Gabriel Manes
-1034 - Malcom
+1034 - Max Harris
 1035 - Henry Niermann
 
