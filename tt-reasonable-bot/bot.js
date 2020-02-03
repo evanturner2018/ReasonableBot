@@ -27,7 +27,7 @@ var barRegex = /^!bar$/;
 var budgetRegex = /^!budget$/;
 var gazeRegex = /^!pd$/;
 var fixRegex = /^!fix$/;
-var ianRegex = /^!btc$/;
+var socialRegex = /^!social$/;
 var driveRegex = /^!drive$/;
 
 // Personal variables
@@ -131,7 +131,7 @@ function getStandardsForm() {
 };
 
 function getBTC() {
-    return '@Ian Quinn';
+    return 'Gaven send me the list of social events';
 };
 
 function getLowestBadge() {
@@ -366,8 +366,8 @@ function respond() {
     }
 
     //beat the clock
-    else if (ianRegex.test(request.text)) {
-      console.log("!btc");
+    else if (socialRegex.test(request.text)) {
+      console.log("!social");
       this.res.writeHead(200);
       postMessage(getBTC);
       this.res.end();
