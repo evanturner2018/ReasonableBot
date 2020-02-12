@@ -189,7 +189,7 @@ function getBudget(){
 };
 
 function getPD(){
-    return 'https://i.imgur.com/xwKoGCe.jpg';
+    return 'https://i.imgur.com/xzW7vWV.png';
 };
 
 // Determine what kind of response to make
