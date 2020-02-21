@@ -103,7 +103,7 @@ function getUsername(){
     return 'sigmachapterofthetatau@gmail.com';
 };
 function getBar(){
-    return 'https://i.imgur.com/iHIh3SM.jpg';
+    return 'https://i.imgur.com/VgKA5t5.jpg';
 };
 
 function getFixForm(){
@@ -131,7 +131,7 @@ function getStandardsForm() {
 };
 
 function getBTC() {
-    return 'Gaven send me the list of social events';
+    return 'https://docs.google.com/document/d/1-nMroalAfScZPbMf5G2OGU2Kf18cukcDnCL1n_DftkU/edit?usp=sharing';
 };
 
 function getLowestBadge() {
