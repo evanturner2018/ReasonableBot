@@ -30,6 +30,7 @@ var fixRegex = /^!fix$/;
 var socialRegex = /^!social$/;
 var driveRegex = /^!drive$/;
 var cockRegex = /^!cock$/;
+var retardRegex = /\bretard/;
 
 // Personal variables
 var passwords = {};
@@ -193,6 +194,10 @@ function getPD(){
     return 'https://i.imgur.com/7eyNivw.png';
 };
 
+function getRetard() {
+    return 'have you stopped to consider how others feel about the R word';
+};
+
 // Determine what kind of response to make
 function respond() {
   // Now we do the cool stuff!!
@@ -320,10 +325,10 @@ function respond() {
 
       // GET FIX FORM
     else if (fixRegex.test(request.text)) {
-	console.log("!fix");
-	this.res.writeHead(200);
-	postMessage(getFixForm);
-	this.res.end();
+        console.log("!fix");
+        this.res.writeHead(200);
+        postMessage(getFixForm);
+        this.res.end();
     }
 
       // GET THANKS
@@ -371,6 +376,14 @@ function respond() {
       console.log("!social");
       this.res.writeHead(200);
       postMessage(getBTC);
+      this.res.end();
+    }
+
+    //ban the R word
+    else if (retardRegex.test(request.text)) {
+      console.log("retard");
+      this.res.writeHead(200);
+      postMessage(getRetard);
       this.res.end();
     }
      
