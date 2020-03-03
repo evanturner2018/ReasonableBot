@@ -29,6 +29,7 @@ var gazeRegex = /^!pd$/;
 var fixRegex = /^!fix$/;
 var socialRegex = /^!social$/;
 var driveRegex = /^!drive$/;
+var cockRegex = /^!cock$/;
 
 // Personal variables
 var passwords = {};
@@ -248,7 +249,7 @@ function respond() {
         this.res.end();
     }
       // GET CALENDAR
-    else if (calendarRegex.test(request.text)) {
+    else if (calendarRegex.test(request.text) || cockRegex.test(request.text)) {
         console.log("!calendar");
         this.res.writeHead(200);
         postMessage(getCalendarText);
