@@ -31,6 +31,7 @@ var socialRegex = /^!social$/;
 var driveRegex = /^!drive$/;
 var cockRegex = /^!cock$/;
 var retardRegex = /\bretard/;
+var covidRegex = /^!covid$/;
 
 // Personal variables
 var passwords = {};
@@ -197,6 +198,10 @@ function getPD(){
 function getRetard() {
     return 'have you stopped to consider how others feel about the R word';
 };
+
+function getCovid() {
+    return readFileToString('./resources/covid.txt');
+}
 
 // Determine what kind of response to make
 function respond() {
@@ -398,7 +403,14 @@ function respond() {
         postMessage(getDrop);
 	this.res.end();
     }
-      
+  
+    //return the frat's positive covid dates
+    else if (covidRegex.test(request.text)) {
+      console.log("!covid");
+      this.res.writeHead(200);
+      postMessage(getCovid);
+      this.res.end();
+    }
     // NOT IMPORTANT...
     else {
       console.log("don't care");

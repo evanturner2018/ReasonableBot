@@ -1,24 +1,18 @@
-974 - Scott Ewonus
-980 - Corey Denham
-984 - Krebs
-986 - Alex Schell
+984 - Jacob Krebs
 987 - Sam Strom
-994 - Abram Haghnazari
+992 - Connor Murphy
 996 - Anton Krondorfer
 997 - Jason Cline
 1000 - Noah Tubbs
 1001 - Andy Wenger
 1002 - Justin Western
-1003 - Reid Souchereau
 1004 - Jacob Dietrich
-1005 - Collin Tateman
 1006 - Spencer Sheehan
-1008 - Conner Applegate
+1007 - Blake Ross
 1009 - Ryan Luttman
-1010 - Joe Conway
 1011 - Drew Begg
 1012 - Ian Quinn
-1013 - AC
+1013 - Andrew 
 1016 - Gaven
 1017 - Alec
 1018 - Andrew
@@ -28,7 +22,7 @@
 1022 - Franco
 1023 - Tony
 1024 - Joey
-1025 - Erik
+1025 - Erik Gustafson 
 1026 - Jon Dailey
 1027 - Rosenberg
 1028 - Walsh
@@ -37,4 +31,7 @@
 1032 - Gabriel Manes
 1034 - Max Harris
 1035 - Henry Niermann
+1036 - Cam Carandang
+1037 - Justin Lambert
+1038 - Jack Lewis
 
