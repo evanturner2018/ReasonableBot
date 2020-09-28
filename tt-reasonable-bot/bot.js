@@ -32,6 +32,7 @@ var driveRegex = /^!drive$/;
 var cockRegex = /^!cock$/;
 var retardRegex = /\bretard/;
 var covidRegex = /^!covid$/;
+var dieRegex = /^!die$/;
 
 // Personal variables
 var passwords = {};
@@ -201,6 +202,13 @@ function getRetard() {
 
 function getCovid() {
     return readFileToString('./resources/covid.txt');
+}
+
+function rollDie() {
+    var min = 1;
+    var max = 7;
+    //return a random number between max (exclusive) and min (inclusive)
+    return Math.floor(Math.random() * (max-min) + min);
 }
 
 // Determine what kind of response to make
@@ -409,6 +417,14 @@ function respond() {
       console.log("!covid");
       this.res.writeHead(200);
       postMessage(getCovid);
+      this.res.end();
+    } 
+    
+    //roll a six sided die
+    else if (dieRegex.test(request.text)) {
+      console.log("!die");
+      this.res.writeHead(200);
+      postMessage(rollDie);
       this.res.end();
     }
     // NOT IMPORTANT...
