@@ -208,7 +208,7 @@ function rollDie() {
     var min = 1;
     var max = 7;
     //return a random number between max (exclusive) and min (inclusive)
-    return Math.floor(Math.random() * (max-min) + min);
+    return (Math.floor(Math.random() * (max-min) + min)).toString();
 }
 
 // Determine what kind of response to make
