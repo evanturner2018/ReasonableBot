@@ -204,6 +204,10 @@ function getCovid() {
     return readFileToString('./resources/covid.txt');
 }
 
+function getCock() {
+    return readFileToString('./resources/cock.txt')
+}
+
 function rollDie() {
     var min = 1;
     var max = 7;
@@ -267,13 +271,20 @@ function respond() {
         this.res.end();
     }
       // GET CALENDAR
-    else if (calendarRegex.test(request.text) || cockRegex.test(request.text)) {
+    else if (calendarRegex.test(request.text)) {
         console.log("!calendar");
         this.res.writeHead(200);
         postMessage(getCalendarText);
         this.res.end();
     }
-      
+
+    else if (cockRegex.test(request.text)) {
+        console.log("!cock");
+        this.res.writeHead(200);
+        postMessage(getCock);
+        this.res.end();
+    }
+
       // GET STUDY
     else if (studyRegex.test(request.text)) {
         console.log("!study");

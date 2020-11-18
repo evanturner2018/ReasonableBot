@@ -1,7 +1,7 @@
 Monday: 
-Tuesday: poker
-Wednesday: football
+Tuesday:
+Wednesday:
 Thursday: 
-Friday: pledge event 
-Saturday: big little beer drinking
-Sunday: chapter
+Friday: Beer die and BTC
+Saturday: Block
+Sunday: Chapter 
