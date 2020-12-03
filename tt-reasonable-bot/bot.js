@@ -33,6 +33,7 @@ var cockRegex = /^!cock$/;
 var retardRegex = /\bretard/;
 var covidRegex = /^!covid$/;
 var dieRegex = /^!die$/;
+var hornyRegex = /^!horny$/;
 
 // Personal variables
 var passwords = {};
@@ -202,6 +203,10 @@ function getRetard() {
 
 function getCovid() {
     return readFileToString('./resources/covid.txt');
+}
+
+function getHorny() {
+    return 'https://www.instagram.com/gaven.zou/';
 }
 
 function getCock() {
@@ -429,7 +434,14 @@ function respond() {
       this.res.writeHead(200);
       postMessage(getCovid);
       this.res.end();
-    } 
+    }
+
+    else if (hornyRegex.test(request.text)) {
+        console.log("!horny");
+        this.res.writeHead(200);
+        postMEssage(getHorny);
+        this.res.end();
+    }
     
     //roll a six sided die
     else if (dieRegex.test(request.text)) {
