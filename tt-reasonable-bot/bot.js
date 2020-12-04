@@ -99,7 +99,7 @@ function getHelpText() {
 function getCalendarText() {
     return readFileToString('./resources/calendar.txt');
 };
-;
+
 function getStudyImage() {
     return 'http://i.imgur.com/NL43LG2.jpg';
 };
@@ -113,7 +113,7 @@ function getBar(){
 
 function getFixForm(){
     return 'https://docs.google.com/forms/d/1PbzY8sRQXdT_Mt45pgj48c19NKyAFoHjgUl3Gr4MVgA/viewform?edit_requested=true';
-}
+};
 
 function getReasonable(){
     return readFileToString('./resources/reasonable_list.txt');
@@ -203,15 +203,15 @@ function getRetard() {
 
 function getCovid() {
     return readFileToString('./resources/covid.txt');
-}
+};
 
 function getHorny() {
     return 'https://www.instagram.com/gaven.zou/';
-}
+};
 
 function getCock() {
-    return readFileToString('./resources/cock.txt')
-}
+    return readFileToString('./resources/cock.txt');
+};
 
 function rollDie() {
     var min = 1;
